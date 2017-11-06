@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-23, 12:21:25
+    Author     : wutai
+*/
+
+.bg-color{ 
+
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#49b8fe,endColorStr=#49b8fe); /*IE 6 7 8*/ 
+
+    background: -ms-linear-gradient(left, #49b8fe,  #009cff);        /* IE 10 */
+
+    background: -moz-linear-gradient(left, #49b8fe,  #009cff);/*火狐*/ 
+
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%,from(#49b8fe), to(#009cff));/*谷歌*/ 
+
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#49b8fe), to(#009cff));      /* Safari 4-5, Chrome 1-9*/
+
+    background: -webkit-linear-gradient(left, #49b8fe,  #009cff);   /*Safari5.1 Chrome 10+*/
+
+    background: -o-linear-gradient(top, #49b8fe,  #009cff);  /*Opera 11.10+*/
+
+} 
+
+/* 重载边框 */
+.btn{
+    border-width: 1px;
+    font-family: 黑体;
+
+}
+.form-control{
+    border-width: 1px;
+    font-family: 黑体;
+}
+.form-control option{
+    color: #000;
+    border-width: 1px;
+}
+
+/* 字体 */
+.chr-blue{
+    font-family: 黑体;
+    color: #009cff;
+}
+.chr-white{
+    font-family: 黑体;
+    color: #fff
+}
+.chr-black{
+    font-family: 黑体;
+    color: #000
+}
+
+/* 两种标签 */
+.lbl-blue {
+    color: #fff;
+    background-color: #009cff;
+    border-color: #46b8da;
+}
+.lbl-white {
+    color: #009cff;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* 两种按钮 */
+.btn-blue {
+    color: #fff;
+    background-color: #009cff;
+    border-color: #46b8da;
+}
+.btn-blue:focus,
+.btn-blue.focus {
+    color: #fff;
+    background-color: #008aff;
+    border-color: #1b6d85;
+}
+.btn-blue:hover {
+    color: #fff;
+    background-color: #008aff;
+    border-color: #269abc;
+}
+.btn-blue:active{
+    color: #fff;
+    background-color: #0066ff;
+    border-color: #269abc;
+}
+.btn-blue .badge {
+    color: #008aff;
+    background-color: #fff;
+}
+
+.btn-white {
+    color: #009cff;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-white:focus,
+.btn-white.focus {
+    color: #009cff;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+.btn-white:hover {
+    color: #009cff;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+.btn-white:active,
+.btn-white.active {
+    color: #009cff;
+    background-color: #e6e6e6;
+    border-color:#e6e6e6;
+}
+
+.btn-white .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+/* 两种输入框 */
+.form-white{
+    color: #fff;
+    border-color: #fff;
+    background-color: rgba(0,0,0,0);
+}
+.form-white::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.form-white:-ms-input-placeholder {
+    color: #fff;
+}
+.form-white::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.form-blue{
+    color: #009cff;
+    border-color: #009cff;
+}
+.form-blue::-moz-placeholder {
+    color: #009cff;
+    opacity: 1;
+}
+.form-blue:-ms-input-placeholder {
+    color: #009cff;
+}
+.form-blue::-webkit-input-placeholder {
+    color: #009cff;
+}
+
+/* 时间框 */
+.form-datetime[disabled],
+.form-datetime[readonly],
+fieldset[disabled] .form-datetime {
+    background-color: rgba(0,0,0,0);
+    opacity: 1;
+}
+.form-datetime[disabled],
+fieldset[disabled] .form-datetime {
+    cursor: not-allowed;
+}
+
+/* 一些空 */
+.index-top-pad{
+    height: 200px;
+    width: 100%;
+}
+.search-top-pad{
+    height: 50px;
+    width: 100%;
+}
+.search-bottom-pad{
+    height: 50px;
+    width: 100%;
+}
+
+/* 其他 */
+.querymargin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.txtmargin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.min-width-300{
+    min-width: 300px;
+}
+/* 阴影 */
+.shadow-common{
+    box-shadow: 0px -1px 3px  3px #e1dcdc;
+    margin-top: 60px;
+    margin-bottom: 20px
+}
+.search-common{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.level-nocolor{
+    color: #fff;
+    border:none;
+    background-color: rgba(0,0,0,0);
+}
+
