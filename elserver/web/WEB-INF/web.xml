@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>jsonServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.jsonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SuggestServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.SuggestServlet</servlet-class>
+        <load-on-startup>2</load-on-startup><!--加这个标签，tomcat启动时会自动加载指定的servlet     值是servlet的加载顺序！！！   数字越小代表加载的优先级越高-->
+    </servlet>
+    <servlet>
+        <servlet-name>mongodbServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.mongodbServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>clientServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.clientServlet</servlet-class>
+        <load-on-startup>2</load-on-startup><!--加这个标签，tomcat启动时会自动加载指定的servlet     值是servlet的加载顺序！！！   数字越小代表加载的优先级越高-->
+    </servlet>
+    <servlet>
+        <servlet-name>getjsonServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.getjsonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>geturljsonServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.geturljsonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getKeywordServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.getKeywordServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>advancequeryServlet</servlet-name>
+        <servlet-class>es.client.test.servlet.advancequeryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userdeleteServlet</servlet-name>
+        <url-pattern>/deleteuser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>jsonServlet</servlet-name>
+        <url-pattern>/getJson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>clientServlet</servlet-name>
+        <url-pattern>/clientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mongodbServlet</servlet-name>
+        <url-pattern>/mongodb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SuggestServlet</servlet-name>
+        <url-pattern>/suggest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>geturljsonServlet</servlet-name>
+        <url-pattern>/urljson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getjsonServlet</servlet-name>
+        <url-pattern>/getjsondata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getKeywordServlet</servlet-name>
+        <url-pattern>/getkwd</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>advancequeryServlet</servlet-name>
+        <url-pattern>/advancequery</url-pattern>
+    </servlet-mapping>
+</web-app>

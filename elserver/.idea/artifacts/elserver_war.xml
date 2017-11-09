@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="elserver:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="webserver.war">
+      <element id="artifact" artifact-name="elserver:war exploded" />
+    </root>
+  </artifact>
+</component>
